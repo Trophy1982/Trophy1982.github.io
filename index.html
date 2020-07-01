@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stilus.css">
+    <title>Hamburgerező</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-2">
+                <a type="button" class="btn btn-primary" href="/index.html">Főoldal</a>
+                <a type="button" class="btn btn-primary" href="/contact.html">Elérherőség</a>
+                <a type="button" class="btn btn-primary" href="/kinalat.html">Étlap</a>
+                <a type="button" class="btn btn-primary" href="/order-form.html">Rendelés</a>
+            </div>
+            <div class="col-8">
+
+                <h3>Időjárás</h3>
+                <form action="" method="post">
+                    <select name="select1" size=”1”>
+                        <option value="0" selected>Hétfő</option>
+                        <option value="1">Kedd</option>
+                        <option value="2">Szerda</option>
+                        <option value="3">Csütörtök</option>
+                        <option value="4">Péntek</option>
+                        <option value="5">Szombat</option>
+                        <option value="6">Vasárnap</option>
+                    </select>
+                    <button name="hofok-gomb" type="button" onclick="hanyfoklesz(select1)" class="btn btn-secondary">Megnéz</button>
+                </form>
+                <div class="form-group">
+                    Hőmérséklet: <span class="hofok">0</span> 'C
+                </div>
+
+                <h1>Főoldal</h1>
+                <p>Ez egy hamburgerező.</p>
+                <img id="fooldalikep"
+                    src="https://www.danubiushotels.com/hu/magazin/wp-content/uploads/2017/10/06_07-Hilton-hamburger.jpg"
+                    alt="habi">
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+    <script src="/js/hofok.js"></script>
+</body>
+
+</html>

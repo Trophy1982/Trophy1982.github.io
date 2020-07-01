@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stilus.css">
+    <title>Megrendelés</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-2">
+                <a type="button" class="btn btn-primary" href="/index.html">Főoldal</a>
+                <a type="button" class="btn btn-primary" href="/contact.html">Elérherőség</a>
+                <a type="button" class="btn btn-primary" href="/kinalat.html">Étlap</a>
+                <a type="button" class="btn btn-primary" href="/order-form.html">Rendelés</a>
+            </div>
+            <div class="col-8">
+                <h1>Étel rendelés</h1>
+                <form>
+                    <fieldset>
+                        <legend>Személyes adatok</legend>
+                        <div>
+                            <label for="name">Név: *</label>
+                            <input id="name" name="name" type="text" required>
+                        </div>
+                        <div>
+                            <label for="email">Email cím: *</label>
+                            <input id="email" name="email" type="email" required>
+                        </div>
+                        <div>
+                            <label for="address">Cím: *</label>
+                            <input id="address" name="address" type="text" required>
+                        </div>
+                        <div>
+                            <label for="comment">Megjegyzés:</label>
+                            <textarea id="comment" name="comment" rows="5"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-2"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <fieldset>
+                    <legend>Termék adatai</legend>
+                    <span>Extra feltét</span>
+                    <div>
+                        <input checked id="nothing" name="extra" type="radio" value="0">
+                        <label for="nothing">Nem kérek</label>
+                    </div>
+                    <div>
+                        <input id="cheese" name="extra" type="radio" value="300">
+                        <label for="cheese">Sajt</label>
+                    </div>
+                    <div>
+                        <input id="double-cheese" name="extra" type="radio" value="600">
+                        <label for="double-cheese">Dupla sajt</label>
+                    </div>
+                    <div>
+                        <input id="double-meat" name="extra" type="radio" value="1000">
+                        <label for="double-meat">Dupla hús</label>
+                    </div>
+                    <div>
+                        <input id="double-double" name="extra" type="radio" value="1600">
+                        <label for="double-double">Dupla - dupla</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Feltét</label>
+                            <input type="text" name="top-input" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Mennyiség</label>
+                            <input type="number" name="amount-input" class="form-control" value="1">
+                            <small class="form-text text-muted">
+                                Minimum 1, maximum 10db rendelhető
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            Fizetendő: <span class="show-amount">0</span> Ft
+                            <small class="form-text">5000ft fölött ingyenes házhozszállítás.</small>
+                        </div>
+                        <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button>
+                    </form>
+
+                </div>
+                <div class="col-3"></div>
+
+            </div>
+
+        </div>
+        <script src="/js/main.js"></script>
+
+</body>
+
+</html>

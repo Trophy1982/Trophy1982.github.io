@@ -1,0 +1,47 @@
+
+h1 {
+    color: rgb(122, 47, 47);
+    font-size: 20px; 
+    text-align: center;
+}
+
+h2 {
+    color: gray;
+    font-size: 16px;   
+    line-height: normal;
+}
+
+h3 {
+    color: gray;
+    font-size: 16px;   
+    line-height: normal;
+    text-align: center;
+}
+
+p {
+    color: gray;
+    font-size: 14px;   
+    line-height: normal;
+    font-weight: lighter;
+}
+
+legend {
+    color: rgb(122, 47, 47);
+    font-size: 14px; 
+    text-align: center;
+}
+
+label {
+    color: #574e4e;
+    font-size: 14px; 
+}
+span {
+    color: gray;
+    font-size: 14px;   
+    line-height: normal;
+    font-weight: bolder;
+}
+
+#fooldalikep {
+    max-width: 100%;
+}
